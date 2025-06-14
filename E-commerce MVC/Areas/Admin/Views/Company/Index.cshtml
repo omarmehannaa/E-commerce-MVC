@@ -1,0 +1,42 @@
+﻿@model IEnumerable<CompanyView>
+@{
+	ViewData["Title"] = "Companies List";
+}
+
+<div class="row pt-4">
+	<div class="col-6">
+		<h2 class="text-primary">Companies List</h2>
+	</div>
+	<div class="col-6 text-end">
+		<a asp-area="Admin" asp-controller="Company" asp-action="Upsert" class="btn btn-primary">Create company</a>
+	</div>
+</div>
+
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Country</th>
+			<th>Government</th>
+			<th>Address</th>
+			<th>Phone Number</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var company in Model)
+		{
+			<tr>
+				<td>@company.Name</td>
+				<td>@company.Country</td>
+				<td>@company.Government</td>
+				<td>@company.Address</td>
+				<td>@company.PhoneNumber</td>
+				<td>
+					<a asp-area="Admin" asp-controller="Company" asp-action="Upsert" asp-route-Id="@company.Id" class="btn btn-primary">Update</a> | 
+					<a asp-area="Admin" asp-controller="Company" asp-action="Delete" asp-route-Id="@company.Id" class="btn btn-danger">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

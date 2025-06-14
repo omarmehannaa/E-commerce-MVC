@@ -1,0 +1,46 @@
+﻿@model CompanyView
+@{
+	ViewData["Title"] = Model.Id != null? "Update Company" : "Create Company";
+}
+
+<form asp-action="Upsert">
+	<div class="form-group">
+		<label asp-for="Name" class="form-label"></label>
+		<input asp-for="Name" class="form-control" />
+		<span asp-validation-for="Name" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Country" class="form-label"></label>
+		<input asp-for="Country" class="form-control" />
+		<span asp-validation-for="Country" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Government" class="form-label"></label>
+		<input asp-for="Government" class="form-control" />
+		<span asp-validation-for="Government" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Address" class="form-label"></label>
+		<input asp-for="Address" class="form-control" />
+		<span asp-validation-for="Address" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="PhoneNumber" class="form-label"></label>
+		<input asp-for="PhoneNumber" class="form-control" />
+		<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+	</div>
+	<div class="form-group mt-3">
+		@if (Model.Id != null)
+		{
+			<input type="submit" value="Update" class="btn btn-primary" />
+		}
+		else
+		{
+			<input type="submit" value="Create" class="btn btn-primary" />
+		}
+	</div>
+</form>
+
+@section Scripts{
+	<partial name="_ValidationScriptsPartial" />
+}

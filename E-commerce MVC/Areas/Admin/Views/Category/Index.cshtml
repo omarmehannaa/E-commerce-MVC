@@ -1,0 +1,44 @@
+﻿@model IEnumerable<CategoryView>
+
+@{
+    ViewData["Title"] = "Category List";
+}
+
+<div class="row pt-4">
+    <div class="col-6">
+        <h2 class="text-primary">Category List</h2>
+    </div>
+    <div class="col-6 text-end">
+        <a asp-area="Admin" asp-controller="Category" asp-action="Create" class="btn btn-primary">Create Category</a>
+    </div>
+</div>
+
+<table class="table table-border table-striped">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Category Order
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.OrderBy(c => c.DisplayOrder)) {
+        <tr>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.DisplayOrder
+            </td>
+            <td>
+                <a asp-action="Edit" asp-controller="Category" asp-route-id="@item.Id" class="btn">Edit</a> |
+                    <a asp-action="Delete" asp-controller="Category" asp-route-id="@item.Id" class="btn">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

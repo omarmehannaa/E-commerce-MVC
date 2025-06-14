@@ -1,0 +1,28 @@
+﻿@model CompanyView
+@{
+	ViewData["Title"] = $"Delete {Model.Name} company";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete @Model.Name company</h3>
+
+<div>
+	<hr />
+	<dl class="row">
+		<dt class="col-2">Name</dt>
+		<dd class="col-10">@Model.Name</dd>
+		<dt class="col-2">Country</dt>
+		<dd class="col-10">@Model.Country</dd>
+		<dt class="col-2">Government</dt>
+		<dd class="col-10">@Model.Government</dd>
+		<dt class="col-2">Address</dt>
+		<dd class="col-10">@Model.Address</dd>
+		<dt class="col-2">Phone Number</dt>
+		<dd class="col-10">@Model.PhoneNumber</dd>
+	</dl>
+	<form asp-action="Delete">
+		<input type="submit" asp-route-Id="@Model.Id" value="Delete" class="btn btn-danger" /> | 
+		<a asp-area="Admin" asp-controller="Company" asp-action="Index" class="btn">Batck to list</a>
+	</form>
+</div>
