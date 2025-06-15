@@ -24,7 +24,7 @@ namespace E_commerce.DataAccess.Repositories
             IQueryable<T> query = _dbSet;
             foreach (var include in includes)
             {
-                query = _dbSet.Include(include);
+                query = query.Include(include);
             }
                 return query;
         }
