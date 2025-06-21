@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-commerce_MVC", "E-commerce MVC\E-commerce_MVC.csproj", "{B390BD46-6E13-43F6-A945-B0830FE68721}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-commerce.MVC", "E-commerce.MVC\E-commerce.MVC.csproj", "{B390BD46-6E13-43F6-A945-B0830FE68721}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-commerce.DataAccess", "DataAccess\E-commerce.DataAccess.csproj", "{F2FA461A-3F3C-4E0A-8F17-B5A4ED802421}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-commerce.DataAccess", "E-commerce.DataAccess\E-commerce.DataAccess.csproj", "{F2FA461A-3F3C-4E0A-8F17-B5A4ED802421}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-commerce.Business", "E-commerce.Business\E-commerce.Business.csproj", "{DB200FE5-462A-41A0-8933-3474F7CADC1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-commerce.Models", "E-commerceModels\E-commerce.Models.csproj", "{E88F5563-A1F5-41FA-BED0-04F81E155992}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-commerce.Models", "E-commerce.Models\E-commerce.Models.csproj", "{E88F5563-A1F5-41FA-BED0-04F81E155992}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FDC68D1-1595-4B14-B420-27E12A8CFBE8}
 	EndGlobalSection
 EndGlobal
