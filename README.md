@@ -6,7 +6,7 @@ A full-stack e-commerce web application built using ASP.NET MVC, following a lay
 
 # 🧩 Features
 
-- Product listing, search, and details  
+- Product listing and details  
 - Add to cart, update quantity, and checkout flow (simplified)  
 - Basic user registration & login (authentication)  
 - CRUD operations for products (admin-style)  
