@@ -1,10 +1,10 @@
-E-Commerce MVC Web Application
+# E-Commerce MVC Web Application
 
 A full-stack e-commerce web application built using ASP.NET MVC, following a layered architecture (Presentation, Business, Data Access, and Models).  
 
 ---
 
-🧩 Features
+# 🧩 Features
 
 - Product listing, search, and details  
 - Add to cart, update quantity, and checkout flow (simplified)  
@@ -15,7 +15,7 @@ A full-stack e-commerce web application built using ASP.NET MVC, following a lay
 
 ---
 
-💻 Tech Stack
+# 💻 Tech Stack
 
 | Layer           | Technologies / Tools        |
 |----------------|-------------------------------|
@@ -27,7 +27,7 @@ A full-stack e-commerce web application built using ASP.NET MVC, following a lay
 
 ---
 
-🏗 Architecture & Design
+# 🏗 Architecture & Design
 
 This project uses a "layered architecture":
 
